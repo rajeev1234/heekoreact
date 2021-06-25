@@ -109,11 +109,8 @@ class Product extends React.Component {
                 "payment_method": "COD"
             },
             success: function (jsonData) {
-              console.log("response3ddddddd", jsonData)
             //   this.props.history.push("/cart")
-                window.location.replace("http://localhost:3000/cart");
-
-            //   this.history.pushState(null, 'cart');
+                window.location.replace("https://heekoreact.herokuapp.com/cart");
 
             }.bind(this),
             error: function (xhr, status, err) {
